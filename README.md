@@ -1,24 +1,37 @@
-# cozy-vue
+# Cozy-vue :earth_africa: :bed:
 
-## Project setup
-```
-npm install
-```
+  ### By bridgetvon, PlainDemon, brotherson67 * [Email us](bridget.schaefer31@gmail.com) * 
 
-### Compiles and hot-reloads for development
-```
-npm run serve
-```
+  ## Table of contents 📚
+  * [Description](#Description)
+  * [User Story](#User-story) 
+  * [Installation Instructions](#installation-Instructions)
+  * [Contributing](#Contributing)
 
-### Compiles and minifies for production
-```
-npm run build
-```
+  # Visual :eyes:
+  
+ 
+ 
+  # Description
+  A mock up app build with Vue.js V3 and bootstrap 5. 
 
-### Lints and fixes files
-```
-npm run lint
-```
+  ## User Story :book:
+  ```
+  AS a developer
+  I WANT to mock a website with a new technology 
+  SO THAT I can learn how to use a new technology. 
 
-### Customize configuration
-See [Configuration Reference](https://cli.vuejs.org/config/).
+  ```
+
+  ## Installation Instructions :hammer_and_wrench:
+  No installation, simply navigate to the deployed application
+
+  ## Deployed 
+  
+
+  ## License :credit_card:
+  * License Type: N/A
+
+
+ ## Contributing 
+ * Bridget Schaefer [Click to view Bridget's GitHub Profile!](https://github.com/bridgetvon) :skier:
