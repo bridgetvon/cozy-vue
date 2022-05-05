@@ -7,11 +7,11 @@
 
 
 <!-- Modal -->
-<div class="modal fade border border-dark"  id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+<div class="modal fade border border-dark modal-sm"  id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
   <div class="modal-dialog">
     <div class="modal-content">
       <div class="modal-header">
-        <h5 class="modal-title" id="exampleModalLabel">Explore</h5>
+        <h5 class="modal-title" id="modal-header">Explore</h5>
         <button type="button" class="close" data-dismiss="modal" aria-label="Close">
           <span aria-hidden="true">&times;</span>
         </button>
@@ -23,6 +23,8 @@
   </div>
   <button type="button" class="btn btn-primary btn-lg" id="read-more">READ MORE</button>
 </div>
+
+
 </template>
 
 <style>
@@ -38,12 +40,10 @@ div {
     background-color: #ffff;
 }
 
-.read-more {
+.read-more,
+.modal-header
+{
 background-color: rgb(97,24,24);
 }
-
-
-
-
 
 </style>

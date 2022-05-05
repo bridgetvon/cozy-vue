@@ -1,16 +1,8 @@
 <template>
 <div class="container">
-  <div class="row">
-    <div class="col">
-      one column 
-    </div>
-    <div class="col">
-      two coloun
-      </div>
-  </div>
   <h1 class="mr-5 p-10">Explore</h1>
-  <explore-tab></explore-tab>
    </div>
+     <explore-tab></explore-tab>
 </template>
 
 <script>
@@ -22,22 +14,22 @@ export default {
 </script>
 
 <style>
-
 html {
   background-color: rgb(97,24,24);
 
 }
 body {
-    height: 100%;
+    height: 100vh;
+    background-position-x: right;
     background-image: url('./assets/Coding-Challenge-Image.png');
     background-repeat: no-repeat;
-    background-size: 80%;
-    float: right;
+    background-size: 90%;
+    float: right; 
 }
 
 h1 {
   font-size: 1000%;
-  padding: 10px;
+  padding: 100px;
   margin-right: 20px;
 }
 
