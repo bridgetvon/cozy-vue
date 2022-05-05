@@ -7,25 +7,24 @@
 <p class="d-inline text-white" id="more-details">More Details</p>
 </div> 
 <!-- Modal -->
-<div class="modal ml-20 fade border border-dark p-10 m-20"  id="myModal" tabindex="-1" aria-labelledby="myModalLabel" aria-hidden="true">
+<div class="modal my-5 fade border-0"  id="myModal" tabindex="-1" aria-labelledby="myModalLabel" aria-hidden="true">
   <div class="modal-dialog">
-    <div class="modal-content">
-      <div class="modal-header">
-        <h5 class="modal-title" id="modal-header">Explore</h5>
+    <div class="pb-1">
+      <div class="">
+        <h5 class="fs-1" id="modal-header">Explore</h5>
         <button type="button" class="close border-0 bg-transparent" data-dismiss="modal" aria-label="Close">
-          <span aria-hidden="true">&times;</span>
+          <span id="modal-span" aria-hidden="true">&times;</span>
         </button>
       </div>
-      <div class="modal-body">
-        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Praesentium unde id eum modi dolore voluptates, odit nihil et, aliquam illum officia adipisci optio excepturi autem reiciendis, doloremque provident eaque pariatur? Lorem, ipsum dolor sit amet consectetur adipisicing elit. Deserunt distinctio voluptates eos aliquid? Cupiditate, possimus perspiciatis optio voluptate sit nemo veniam molestiae laboriosam, eum, vitae commodi voluptatem odio consequuntur ullam? Lorem ipsum dolor sit amet consectetur adipisicing elit. Tenetur expedita harum labore dolorem doloremque. Accusamus tenetur reiciendis dolore quos vitae molestias maiores eos ea hic quidem, autem excepturi illum alias?
+      <div class="fw-lighter" id="modal-body" >
+        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Praesentium unde id eum modi Lorem ipsum dolor sit amet consectetur, adipisicing elit. Enim ipsa, ratione magnam molestiae pariatur optio, nulla porro molestias provident consequatur sapiente, dolore eaque ipsam laborum suscipit voluptatibus minus sunt voluptatum. Lorem ipsum, dolor sit amet consectetur adipisicing elit. Harum corporis, est laudantium nam esse aut quo minima similique aspernatur officia. Voluptatem quod harum quisquam expedita alias laudantium minus dolores labore?
       </div>
     </div>
   </div>
   <div>
 </div>
-  <button type="button" class="btn btn-primary btn-lg" id="read-more">READ MORE</button>
+  <button type="button" class="btn btn-sm rounded-0" id="read-more">READ MORE</button>
 </div>
-
 </template>
 
 <style>
@@ -39,18 +38,92 @@ h1 {
     background-color: #ffff;
     box-sizing: border-box;
     width: 40%;
-    height: 60%;
+    height: 80%;
     color: #000000;
+    justify-content: center;
 }
 
-.read-more,
-.modal-header
+#modal-span {
+    color: rgb(97,24,24);
+    position: absolute;
+    top: 0px;
+    right: 0px;
+    font-size: xx-large;
+}
+
+#read-more,
+#modal-header
 {
 color: rgb(97,24,24);
+
 }
 
-.more-details {
-    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+#read-more {
+     background: linear-gradient(to right, rgb(97,24,24), rgb(149,86,71));
+     color: #ffff;
+     padding: 5px;
+     padding-left: 45px;
+     padding-right: 45px;
+     font-family: sans-serif;
 }
+
+#modal-body {
+    font-family: sans-serif;
+    font-size: 10px;
+    padding: 0 50px;
+    line-height: 2;
+}
+
+/* #modal-header {
+      text-align:left;
+  padding-bottom:15px;
+  background: /* gradient can be an image */
+    /* linear-gradient(
+   to right, rgb(97,24,24), rgb(149,86,71), #ffff
+    )
+    left 
+    bottom    
+    no-repeat; 
+  background-size:100% 5px ;
+}  */
+
+#modal-header {
+        position: relative;
+        text-align: center;
+        padding-bottom: 1px;
+        width: 80px;
+        height: 80px;
+        border: none;
+        margin-right: 15%;
+    }
+    #modal-header::after {
+        content: '';
+        position: absolute;
+        margin: auto;
+        right: 25px;
+        bottom: 0;
+        left: 0;
+        width: 300%;
+        height: 1px;
+          background: 
+    linear-gradient(
+   to right, rgb(97,24,24), rgb(149,86,71), #ffff
+    )
+    left 
+    bottom    
+    no-repeat; 
+  background-size:90% 5px ;
+    }
+
+
+
+#myModal {
+   position:fixed;
+   top:auto;
+   right:auto;
+   left:100px;
+   bottom:2px;
+}  
+
 
 </style>

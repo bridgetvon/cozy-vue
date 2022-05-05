@@ -1,18 +1,18 @@
 <template>
-    <div>i am a footer</div>
-    <div>
+<footer>
+    
     <img src='../assets/Facebook.svg'>
-    </div>
-    <div>
+  
+    
     <img src='../assets/Instagram.svg'>
-    </div>
+    
+</footer>
 </template>
 
 <style scoped> 
-div {
+footer {
 color: #fff;
-height: 50%;
-padding: 40px;
+
 }
 
 </style>
