@@ -1,26 +1,45 @@
 <template>
-  <img alt="Vue logo" src="./assets/logo.png">
-  <HelloWorld msg="Welcome to Your Vue.js App"/>
+<div class="container">
+  <div class="row">
+    <div class="col">
+      one column 
+    </div>
+    <div class="col">
+      two coloun
+      </div>
+  </div>
+  <h1 class="mr-5 p-10">Explore</h1>
+  <explore-tab></explore-tab>
+   </div>
 </template>
 
 <script>
-import HelloWorld from './components/HelloWorld.vue'
-
+import ExploreTab from './components/ExploreTab.vue';
 export default {
-  name: 'App',
-  components: {
-    HelloWorld
-  }
-}
+  components: { ExploreTab },
+
+};
 </script>
 
 <style>
-#app {
-  font-family: Avenir, Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
-  margin-top: 60px;
+
+html {
+  background-color: rgb(97,24,24);
+
 }
+body {
+    height: 100%;
+    background-image: url('./assets/Coding-Challenge-Image.png');
+    background-repeat: no-repeat;
+    background-size: 80%;
+    float: right;
+}
+
+h1 {
+  font-size: 1000%;
+  padding: 10px;
+  margin-right: 20px;
+}
+
+
 </style>
