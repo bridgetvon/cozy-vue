@@ -1,37 +1,34 @@
 <template>
-<div class="container">
-  <h1 class="mr-5 p-10">Explore</h1>
-   </div>
-     <explore-tab></explore-tab>
+  <div class="home">
+    <explore-tab></explore-tab>
+    <footer-comp></footer-comp>
+  </div>
 </template>
 
 <script>
-import ExploreTab from './components/ExploreTab.vue';
-export default {
-  components: { ExploreTab },
-
-};
+export default {};
 </script>
 
 <style>
-html {
-  background-color: rgb(97,24,24);
-
+* {
+  font-family: "IBM Plex Serif", serif;
 }
-body {
-    height: 100vh;
-    background-position-x: right;
-    background-image: url('./assets/Coding-Challenge-Image.png');
-    background-repeat: no-repeat;
-    background-size: 90%;
-    float: right; 
+
+html {
+  background-color: rgb(97, 24, 24);
+  height: 100vh;
 }
 
 h1 {
   font-size: 1000%;
-  padding: 100px;
-  margin-right: 20px;
 }
 
-
+.home {
+  background-position-x: right;
+  background-image: url("./assets/Coding-Challenge-Image.png");
+  background-size: 70% 100%;
+  background-color: rgb(97, 24, 24);
+  background-repeat: no-repeat;
+  height: 100vh;
+}
 </style>

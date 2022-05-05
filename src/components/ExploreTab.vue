@@ -1,18 +1,18 @@
 <template>
-<!-- Button trigger modal -->
-<button type="button" class="border-0" data-toggle="modal" data-target="#exampleModal">
- <svg xmlns="http://www.w3.org/2000/svg" width="43" height="43" viewBox="0 0 43 43"><g><g><path fill="#fff" d="M29.295 22.139h-6.833v7.17h-1.934v-7.17h-6.833v-1.815h6.833v-7.11h1.934v7.11h6.833zM21.5 0C9.626 0 0 9.626 0 21.5S9.626 43 21.5 43 43 33.374 43 21.5A21.5 21.5 0 0 0 21.5 0z"/></g></g></svg>
+<div class="position-absolute bottom-0 start-0 translate-middle-y px-5 mx-4">
+<h1>Explore</h1>
+<button type="button" class="border-0 bg-transparent pr-3" data-toggle="modal" data-target="#myModal">
+    <img class="d-inline" src='../assets/Plus.svg'>
 </button>
-<p>More Details</p>
-
-
+<p class="d-inline text-white" id="more-details">More Details</p>
+</div> 
 <!-- Modal -->
-<div class="modal fade border border-dark modal-sm"  id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+<div class="modal ml-20 fade border border-dark p-10 m-20"  id="myModal" tabindex="-1" aria-labelledby="myModalLabel" aria-hidden="true">
   <div class="modal-dialog">
     <div class="modal-content">
       <div class="modal-header">
         <h5 class="modal-title" id="modal-header">Explore</h5>
-        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+        <button type="button" class="close border-0 bg-transparent" data-dismiss="modal" aria-label="Close">
           <span aria-hidden="true">&times;</span>
         </button>
       </div>
@@ -21,29 +21,36 @@
       </div>
     </div>
   </div>
+  <div>
+</div>
   <button type="button" class="btn btn-primary btn-lg" id="read-more">READ MORE</button>
 </div>
-
 
 </template>
 
 <style>
-.modal-body {
-    color: #0000;
+h1 {
+    color: #ffff;
+    font-size: 900%;
 }
 
-div {
-    color: #ffff;
-}
 
 .modal {
     background-color: #ffff;
+    box-sizing: border-box;
+    width: 40%;
+    height: 60%;
+    color: #000000;
 }
 
 .read-more,
 .modal-header
 {
-background-color: rgb(97,24,24);
+color: rgb(97,24,24);
+}
+
+.more-details {
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
 }
 
 </style>
