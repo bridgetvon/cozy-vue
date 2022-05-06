@@ -23,7 +23,7 @@
   >
     <div class="modal-dialog">
       <div class="pb-1">
-        <div class="">
+        <div>
           <h5 class="fs-1" id="modal-header">Explore</h5>
           <div class="position relative">
             <button
@@ -52,7 +52,7 @@
         </div>
       </div>
     </div>
-    <div></div>
+    
     <button type="button" class="btn btn-sm rounded-0" id="read-more">
       READ MORE
     </button>
@@ -175,5 +175,21 @@ h1 {
     padding: 0px !important;
     margin: 0px !important;
   }
+}
+
+@media (max-width: 991.98px) {
+    #main-div {
+        margin-bottom: 200px;
+        
+    }
+    .modal {
+        height: 40%;
+        width: 50%;
+    }
+
+    #myModal {
+        margin-bottom: 150px;
+    }
+
 }
 </style>
