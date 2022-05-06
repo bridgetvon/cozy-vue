@@ -52,7 +52,7 @@
         </div>
       </div>
     </div>
-    
+
     <button type="button" class="btn btn-sm rounded-0" id="read-more">
       READ MORE
     </button>
@@ -177,19 +177,44 @@ h1 {
   }
 }
 
+
 @media (max-width: 991.98px) {
-    #main-div {
-        margin-bottom: 200px;
-        
-    }
-    .modal {
-        height: 40%;
-        width: 50%;
-    }
+  #main-div {
+    margin-bottom: 200px;
+  }
+  .modal {
+    height: 40%;
+    width: 50%;
+  }
 
-    #myModal {
-        margin-bottom: 150px;
-    }
+  #myModal {
+    margin-bottom: 150px;
+  }
+}
 
+@media only screen and (device-width: 414px) and (device-height: 896px) and (-webkit-device-pixel-ratio: 2) {
+  #main-div {
+    margin-bottom: 200px;
+  }
+  .modal {
+    height: 80%;
+    width: 70%;
+  }
+}
+
+@media only screen and (device-width: 390px) and (device-height: 844px) and (-webkit-device-pixel-ratio: 3) {
+  .modal {
+    height: 80%;
+    width: 70%;
+  }
+}
+
+@media only screen and (max-device-width: 480px),
+  only screen and (min-device-width: 560px) and (max-device-width: 1136px) and (-webkit-min-device-pixel-ratio: 2) {
+  /* iPhone only */
+  .modal {
+    width: 65%;
+    height: 70%;
+  }
 }
 </style>
