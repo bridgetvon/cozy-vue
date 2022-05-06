@@ -9,8 +9,8 @@
   * [Contributing](#Contributing)
 
   # Visual :eyes:
-  <img src="../cozy-vue/src/assets/main.png">
-  <img src="../cozy-vue/src/assets/exploreModal.png">
+  <img src="./src/assets/main.png">
+  <img src="./src/assets/exploreModal.png">
  
  
   # Description
