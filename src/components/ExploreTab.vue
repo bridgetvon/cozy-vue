@@ -1,13 +1,12 @@
 <template>
 <div class="position-absolute bottom-0 start-0 translate-middle-y px-5 mx-4">
-<h1>Explore</h1>
+<h1 class="animate__animated animate__bounce">Explore</h1>
 <button type="button" class="border-0 bg-transparent pr-3" data-toggle="modal" data-target="#myModal">
     <img class="d-inline" src='../assets/Plus.svg'>
 </button>
 <p class="d-inline text-white" id="more-details">More Details</p>
 </div> 
-<!-- Modal -->
-<div class="modal my-5 fade border-0"  id="myModal" tabindex="-1" aria-labelledby="myModalLabel" aria-hidden="true">
+<div class="modal fade border-0"  id="myModal" tabindex="-1" aria-labelledby="myModalLabel" aria-hidden="true">
   <div class="modal-dialog">
     <div class="pb-1">
       <div class="">
@@ -19,7 +18,7 @@
         </div>
       </div>
       <div class="fw-lighter" id="modal-body" >
-        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Praesentium unde id eum modi Lorem ipsum dolor sit amet consectetur, adipisicing elit. Enim ipsa, ratione magnam molestiae pariatur optio, nulla porro molestias provident consequatur sapiente, dolore eaque ipsam laborum suscipit voluptatibus minus sunt voluptatum. Lorem ipsum, dolor sit amet consectetur adipisicing elit. Harum corporis, est laudantium nam esse aut quo minima similique aspernatur officia. Voluptatem quod harum quisquam expedita alias laudantium minus dolores labore?
+        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Praesentium unde id eum modi Lorem ipsum dolor sit amet consectetur, adipisicing elit. lorem Enim ipsa, ratione magnam molestiae pariatur optio, nulla porro molestias provident consequatur sapiente, dolore eaque ipsam laborum suscipit voluptatibus minus sunt voluptatum. Lorem ipsum, dolor sit amet consectetur adipisicing elit. Harum corporis, est laudantium nam esse aut quo minima similique aspernatur officia. Voluptatem quod harum quisquam expedita alias laudantium minus dolores labore? Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ducimus, neque itaque? Consequatur enim soluta omnis voluptates voluptas. Quis aut impedit deserunt pariatur beatae eveniet veniam sunt, odit neque harum officia!
       </div>
     </div>
   </div>
