@@ -9,7 +9,8 @@
   * [Contributing](#Contributing)
 
   # Visual :eyes:
-  
+  <img src="../cozy-vue/src/assets/main.png">
+  <img src="../cozy-vue/src/assets/exploreModal.png">
  
  
   # Description
@@ -27,7 +28,7 @@
   No installation, simply navigate to the deployed application
 
   ## Deployed 
-  
+  https://cozy-vue.vercel.app/
 
   ## License :credit_card:
   * License Type: N/A
