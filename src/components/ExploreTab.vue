@@ -12,9 +12,11 @@
     <div class="pb-1">
       <div class="">
         <h5 class="fs-1" id="modal-header">Explore</h5>
+        <div class="position relative">
         <button type="button" class="close border-0 bg-transparent" data-dismiss="modal" aria-label="Close">
           <span id="modal-span" aria-hidden="true">&times;</span>
         </button>
+        </div>
       </div>
       <div class="fw-lighter" id="modal-body" >
         Lorem ipsum, dolor sit amet consectetur adipisicing elit. Praesentium unde id eum modi Lorem ipsum dolor sit amet consectetur, adipisicing elit. Enim ipsa, ratione magnam molestiae pariatur optio, nulla porro molestias provident consequatur sapiente, dolore eaque ipsam laborum suscipit voluptatibus minus sunt voluptatum. Lorem ipsum, dolor sit amet consectetur adipisicing elit. Harum corporis, est laudantium nam esse aut quo minima similique aspernatur officia. Voluptatem quod harum quisquam expedita alias laudantium minus dolores labore?
@@ -27,12 +29,18 @@
 </div>
 </template>
 
+
+
+
 <style>
 h1 {
     color: #ffff;
     font-size: 900%;
 }
 
+#more-details {
+    font-family: sans-serif;
+}
 
 .modal {
     background-color: #ffff;
@@ -46,8 +54,10 @@ h1 {
 #modal-span {
     color: rgb(97,24,24);
     position: absolute;
-    top: 0px;
-    right: 0px;
+    top: 0;
+    right: 0;
+    margin-right: 10px;
+    margin-top: 0px;
     font-size: xx-large;
 }
 
@@ -64,37 +74,28 @@ color: rgb(97,24,24);
      padding: 5px;
      padding-left: 45px;
      padding-right: 45px;
+     position: relative;
+     top: -25px;
+     left: 48px;
      font-family: sans-serif;
+
 }
 
 #modal-body {
     font-family: sans-serif;
     font-size: 10px;
-    padding: 0 50px;
-    line-height: 2;
+    padding: 30px 50px;
+    line-height: 2; 
 }
-
-/* #modal-header {
-      text-align:left;
-  padding-bottom:15px;
-  background: /* gradient can be an image */
-    /* linear-gradient(
-   to right, rgb(97,24,24), rgb(149,86,71), #ffff
-    )
-    left 
-    bottom    
-    no-repeat; 
-  background-size:100% 5px ;
-}  */
 
 #modal-header {
         position: relative;
+        top: 40px;
+        left: 48px;
         text-align: center;
-        padding-bottom: 1px;
         width: 80px;
-        height: 80px;
+        height: 50px;
         border: none;
-        margin-right: 15%;
     }
     #modal-header::after {
         content: '';
@@ -104,7 +105,7 @@ color: rgb(97,24,24);
         bottom: 0;
         left: 0;
         width: 300%;
-        height: 1px;
+        height: 2px;
           background: 
     linear-gradient(
    to right, rgb(97,24,24), rgb(149,86,71), #ffff
