@@ -14,15 +14,6 @@ export default {};
   font-family: "IBM Plex Serif", serif;
 }
 
-html {
-  background-color: rgb(97, 24, 24);
-  height: 100vh;
-}
-
-h1 {
-  font-size: 1000%;
-}
-
 .home {
   background-position-x: right;
   background-image: url("./assets/Coding-Challenge-Image.png");
@@ -30,5 +21,16 @@ h1 {
   background-color: rgb(97, 24, 24);
   background-repeat: no-repeat;
   height: 100vh;
+}
+
+@media (max-width: 575.98px) {
+  .home {
+  background-color: rgba(97, 24, 24);
+  background-image: image('./assets/Coding-Challenge-Image.png');
+  }
+
+  h1 {
+    font-size: 300%;
+  }
 }
 </style>
