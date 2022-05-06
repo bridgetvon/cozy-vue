@@ -3,11 +3,8 @@
     class="position-absolute bottom-0 start-0 translate-middle-y px-5 mx-4"
     id="main-div"
   >
-  <transition 
-  mode="out-in"
-  leave-active-class="animate__animated animate__zoomOutLeft"
-    enter-active-class="animate__animated animate__jackInTheBox">
-    <h1 v-if="animateText" class="animate__animated animate__jackInTheBox">Explore</h1>
+  <transition>
+    <h1 class="animate__animated animate__jackInTheBox">Explore</h1>
   </transition>
     <button
       @click="animateText = !animateText"
@@ -18,7 +15,7 @@
     >
       <img class="d-inline" src="../assets/Plus.svg" />
     </button>
-    <p class="d-inline text-white" id="more-details">More Details</p>
+    <p class="d-inline text-white animate__animated animate__tada" id="more-details">More Details</p>
   </div>
   <div
     class="modal fade border-0"
