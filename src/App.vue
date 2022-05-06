@@ -37,7 +37,7 @@ export default {};
   }
 
   h1 {
-    font-size: 300%;
+    font-size: 200%;
   }
 }
 
@@ -48,8 +48,18 @@ export default {};
       margin: 0px;
       background-size: 80% 100%;
       overflow-x: hidden;
-      
+      overscroll-behavior-y: hidden;
+    }
+}
 
+@media only screen and (max-device-width: 414px), only screen and (min-device-width: 896px) and (max-device-width: 1136px) and (-webkit-min-device-pixel-ratio: 2) {
+    /* iPhone only */
+    .home {
+      padding: 0px;
+      margin: 0px;
+      background-size: 80% 100%;
+      overflow-x: hidden;
+      overscroll-behavior-y: hidden;
     }
 }
 </style>

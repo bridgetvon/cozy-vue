@@ -4,12 +4,13 @@
     id="main-div"
   >
   <transition 
-  enter-active-class="animate__animated animate__jackInTheBox"
-  leave-active-class="animate__animated animate__zoomOutLeft">
-    <h1 v-if="showImage" class="animate__animated animate__jackInTheBox">Explore</h1>
+  mode="out-in"
+  leave-active-class="animate__animated animate__zoomOutLeft"
+    enter-active-class="animate__animated animate__jackInTheBox">
+    <h1 v-if="animateText" class="animate__animated animate__jackInTheBox">Explore</h1>
   </transition>
     <button
-      @click="showImage = !showImage"
+      @click="animateText = !animateText"
       type="button"
       class="border-0 bg-transparent pr-3"
       data-toggle="modal"
@@ -32,11 +33,11 @@
           <h5 class="fs-1" id="modal-header">Explore</h5>
           <div class="position relative">
             <button
-              @click="showImage"
               type="button"
               class="close border-0 bg-transparent"
-              data-dismiss="modal"
+              bs-data-dismiss="modal"
               aria-label="Close"
+              id="close-btn"
             >
               <span id="modal-span" aria-hidden="true">&times;</span>
             </button>
@@ -68,8 +69,9 @@
 
 export default ({
     data: () => ({
-        showImage: true
+        animateText: true,
     }),
+
 })
 </script>
 
@@ -190,6 +192,14 @@ h1 {
     padding: 0px !important;
     margin: 0px !important;
   }
+
+  #modal-span,
+  #close-btn {
+      z-index:999;
+      font-size: 50px;
+  }
+
+ 
 }
 
 
@@ -232,4 +242,18 @@ h1 {
     height: 70%;
   }
 }
+
+@media (min-width: 1400px) {
+    .modal {
+        width: 20%;
+        height: 80%
+    }
+}
+
+@media (min-width: 768px) { 
+    .modal {
+        height: 70%;
+        width: 50%;
+    }
+ }
 </style>
