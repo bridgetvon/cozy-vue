@@ -3,8 +3,13 @@
     class="position-absolute bottom-0 start-0 translate-middle-y px-5 mx-4"
     id="main-div"
   >
-    <h1 class="animate__animated animate__jackInTheBox">Explore</h1>
+  <transition 
+  enter-active-class="animate__animated animate__jackInTheBox"
+  leave-active-class="animate__animated animate__zoomOutLeft">
+    <h1 v-if="showImage" class="animate__animated animate__jackInTheBox">Explore</h1>
+  </transition>
     <button
+      @click="showImage = !showImage"
       type="button"
       class="border-0 bg-transparent pr-3"
       data-toggle="modal"
@@ -27,6 +32,7 @@
           <h5 class="fs-1" id="modal-header">Explore</h5>
           <div class="position relative">
             <button
+              @click="showImage"
               type="button"
               class="close border-0 bg-transparent"
               data-dismiss="modal"
@@ -52,12 +58,21 @@
         </div>
       </div>
     </div>
-
-    <button type="button" class="btn btn-sm rounded-0" id="read-more">
+    <button type="button" class="btn btn-sm rounded-0 animate__animated animate__bounce" id="read-more">
       READ MORE
     </button>
   </div>
 </template>
+
+<script>
+
+export default ({
+    data: () => ({
+        showImage: true
+    }),
+})
+</script>
+
 
 <style>
 h1 {
@@ -73,7 +88,7 @@ h1 {
   background-color: #ffff;
   box-sizing: border-box;
   width: 40%;
-  height: 70%;
+  height: 57%;
   color: #000000;
   justify-content: center;
 }
