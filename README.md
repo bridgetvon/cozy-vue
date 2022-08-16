@@ -1,6 +1,6 @@
 # Cozy-vue :earth_africa: :bed:
 
-  ### By bridgetvon, PlainDemon, brotherson67 * [Email us](bridget.schaefer31@gmail.com) * 
+  ### By bridgetvon * [Email us](bridget.schaefer31@gmail.com) * 
 
   ## Table of contents 📚
   * [Description](#Description)
